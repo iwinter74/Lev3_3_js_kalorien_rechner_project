@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <form action="">
+<h1>Kalorien rechner</h1>
+<h2>Körpergröße (cm)</h2>
+<input type="text" name="" id="height">
+<h2>Alter</h2>
+<input type="text" name="" id="age">
+<h2>Gewicht (kg)</h2>
+<input type="text" name="" id="weight">
+<div>
+    <h2>Körperbau</h2>
+    <div>
+        <input type="radio" name="gender" id="weiblich" checked>
+        <label for="Weiblich">Weiblich</label>
+    </div>
+    <div>
+       <input type="radio" name="gender" id="">
+        <label for="Männlich">Männlich</label>
+    </div>
+</div>
+<h2>Arbeits- und Freizeitaktivität</h2>
+<select name="" id="activity">
+<option value="0.95">Schlafen</option>
+<option value="1.2">Nur sitzen oder liegen</option>
+<option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit, z.B. Büroarbeit</option>
+<option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+<option value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker, Mechaniker, Hausfrauen</option>
+<option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+</select>
+<div id="submit">
+<input type="button" value="Submit" onclick="calories()">
+</div>
+<table>
+    <tr>
+        <th></th>
+        <th>kcal</th>
+        <th>kJ</th>
+    </tr>
+    <tr>
+        <td>Grundumsatz</td>
+        <td id="grundKcal"></td>
+        <td id= "grundkJ"></td>
+    </tr>
+    <tr>
+        <td>Gesamtumsatz</td>
+        <td id="gesamtKcal"></td>
+        <td id="gesamtKJ"></td>
+    </tr>
+
+</table>
+<p>Das Ergebnis des Rechners sollten Sie als....</p>
+<script src="assets/js/main.js"></script>
+</body>
+    </form>
+   
+</html>
