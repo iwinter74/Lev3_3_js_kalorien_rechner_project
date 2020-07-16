@@ -24,6 +24,6 @@ function calories() {
     gesamtumsatz = grundumsatz * pal
     document.getElementById("gesamtKcal").innerHTML = gesamtumsatz.toFixed(1)
 
-    document.getElementById("grundKJ").innerHTML = grundumsatz * 4.184
-    document.getElementById("gesamtKJ").innerHTML = gesamtumsatz *4.184
+    document.getElementById("grundkJ").innerHTML = (grundumsatz * 4.184).toFixed(1)
+    document.getElementById("gesamtkJ").innerHTML = (gesamtumsatz *4.184).toFixed(1)
 }
